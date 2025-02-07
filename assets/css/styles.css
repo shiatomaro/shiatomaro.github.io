@@ -1,12 +1,8 @@
 
 body {
     font-family: Arial, sans-serif;
-    color: #0ffbf9;
+    color: #17dfdb;
     background-color: #19171b;
-}
-
-img {
-    border-radius: 50%;
 }
 
 .navbar {
@@ -31,6 +27,26 @@ img {
 
 .nav-link:hover .nav-icon {
     transform: scale(1.2);
+}
+@keyframes glitch {
+    0% { text-shadow: 2px 2px 0 #c51f72, -2px -2px 0 #0000ff; }
+    25% { text-shadow: -2px -2px 0 #c51f72, 2px 2px 0 #0000ff; }
+    50% { text-shadow: 2px -2px 0 #c51f72, -2px 2px 0 #0000ff; }
+    75% { text-shadow: -2px 2px 0 #c51f72, 2px -2px 0 #0000ff; }
+    100% { text-shadow: 2px 2px 0 #c51f72, -2px -2px 0 #0000ff; }
+}
+
+.glitch {
+    font-size: 3.0rem;
+    font-weight: bold;
+    color: #fff;
+    position: relative;
+    animation: glitch 10.0s infinite;
+}
+
+img {
+    width: 150px;
+    height: auto;
 }
 
 @media (max-width: 992px) { 
