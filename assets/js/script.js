@@ -1,23 +1,15 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const contentDiv = document.getElementById("content");
+document.addEventListener("DOMContentLoaded", function() {
+    const links = document.querySelectorAll(".nav-with-loading");
 
-    function loadSection(section) {
-        fetch(`sections/${section}.html`)
-            .then(response => response.text())
-            .then(data => {
-                contentDiv.innerHTML = data;
-                contentDiv.classList.add("fade-in"); // Add fade-in effect
-                setTimeout(() => contentDiv.classList.remove("fade-in"), 500);
-            })
-            .catch(error => console.error("Error loading section:", error));
-    }
-    loadSection("home");
-    document.querySelectorAll(".nav-link").forEach(link => {
-        link.addEventListener("click", function (e) {
-            e.preventDefault();
-            const section = this.getAttribute("data-section");
-            loadSection(section);
+    links.forEach(link => {
+        link.addEventListener("click", function(event) {
+            // Remove active class from all links
+            links.forEach(l => l.classList.remove("active"));
+
+            // Add active class to clicked link
+            this.classList.add("active");
+
+            event.preventDefault(); // Prevent instant navigation (optional)
         });
     });
 });
-a

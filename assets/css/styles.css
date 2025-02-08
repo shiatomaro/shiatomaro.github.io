@@ -28,6 +28,7 @@ body {
 .nav-link:hover .nav-icon {
     transform: scale(1.2);
 }
+
 @keyframes glitch {
     0% { text-shadow: 2px 2px 0 #c51f72, -2px -2px 0 #0000ff; }
     25% { text-shadow: -2px -2px 0 #c51f72, 2px 2px 0 #0000ff; }
@@ -37,11 +38,18 @@ body {
 }
 
 .glitch {
-    font-size: 3.rem;
+    font-size: 2.5rem;
     font-weight: bold;
     color: #fff;
     position: relative;
     animation: glitch 10.0s infinite;
+}
+
+.username {
+ font-size: 2.0rem;
+ color: #fff;
+ position: relative;
+ font-family: 'Poppins', sans-serif;
 }
 
 img {
