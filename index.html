@@ -2,86 +2,77 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Shia Tomaro</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shia's Portfolio</title>
     <link rel="stylesheet" href="assets/css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <script src="assets/js/analytics.js"></script>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg">
-        <div class="container">
-            <a class="navbar-brand" href="#home">
-                <img src="assets/images/logo.png" alt="My Portfolio Logo" class="d-inline-block align-top">
-            </a>            
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#home">
-                            <img src="assets/images/1.png" alt="Home" class="nav-icon">
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects">
-                            <img src="assets/images/5.png" alt="Projects" class="nav-icon">
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#resume">
-                            <img src="assets/images/2.png" alt="Resume" class="nav-icon">
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">
-                            <img src="assets/images/3.png" alt="Contact" class="nav-icon">
-                        </a>
-                    </li>
-                </ul>                             
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <h1 id="loading-line-1" class="hidden">Hey there, I'm Shia.</h1>
+        <h2 id="loading-line-2" class="hidden">How can I help today?</h2>
+    </div>
+
+    <div id="main-content" class="hidden">
+        <!-- Sidebar Design Element -->
+        <div class="sidebar-design">
+            <img src="assets/images/logo.png" alt="My Portfolio Logo" class="design-logo">
+        
+            <div class="design-item">
+                <img src="assets/images/1.png" alt="Design 1" class="design-icon">
+                <span class="tooltip">Home</span>
+            </div>
+            <div class="design-item">
+                <img src="assets/images/5.png" alt="Design 2" class="design-icon">
+                <span class="tooltip">Projects</span>
+            </div>
+            <div class="design-item">
+                <img src="assets/images/2.png" alt="Design 3" class="design-icon">
+                <span class="tooltip">Socials</span>
+            </div>
+            <div class="design-item">
+                <img src="assets/images/3.png" alt="Design 4" class="design-icon">
+                <span class="tooltip">Contact Me</span>
             </div>
         </div>
-    </nav>
+        
 
-    <!-- Home Section -->
-    <section id="home" class="container text-center mt-5">
-        <h1 class="glitch">Hey There! Welcome To My Portfolio</h1>
-        <h2 class="username">Shia Tomaro</h2>
-        <p>Web & App Developer | Cybersecurity | Graphic Designer & Art Illustrator</p>
-        <img src="assets/images/profile.jpg" alt="My Photo" class="img">
-    </section>
+        <!-- Main Content -->
+        <section id="home" class="container">
+            <!-- Scrollable Background Section -->
+            <div class="content-left">
+               <h1 class="glitch">Shia Tomaro</h1>
+                <p class="username">Web & App Developer | Cybersecurity | Graphic Designer & Art Illustrator</p> 
+            </div>
 
-    <!-- Projects Section -->
-    <section id="projects" class="container text-center mt-5">
-        <h2>Projects</h2>
-        <p>Here are some of my featured projects.</p>
-        <!-- Add project details here -->
-    </section>
+            <!-- Fixed Profile Section -->
+            <div class="content-right">
+                <h2>Turning Imagination into Reality</h2>
+                <p>
+                    From a young age, I’ve always had a knack for bringing my imagination to life. My journey began when I was just 
+                    <strong>13 or 14</strong>, sketching my first website with nothing but <strong>pen and paper</strong>—a simple idea that would later evolve into something much bigger.
+                </p>
+                <p>
+                    As I grew, my curiosity expanded beyond web development. I delved into <strong>multimedia arts</strong>, exploring <strong>photography, photo editing, and illustration</strong>, where I found another creative outlet. 
+                    By the time I reached senior high school, I pursued <strong>Mobile and Web Development (MAWD)</strong>, spending <strong>two years</strong> mastering the craft and deepening my technical skills.
+                </p>
+                <p>
+                    At <strong>18</strong>, I developed my <strong>first Java application</strong>, a milestone made possible when I finally got my first laptop. This opened up a new world of possibilities, pushing me to explore even further.
+                </p>
+                <p>
+                    In College, I chose to major in <strong>Cybersecurity</strong>, driven by a personal need to understand <strong>digital security</strong> due to past experiences. The more I learned, the more I realized how vital security is in the tech world.
+                </p>
+                <p>
+                    Now, my passion for development continues to grow. I’m actively expanding my expertise in different programming languages, with a particular focus on <strong>Go</strong>—a language that fascinates me with its 
+                    <strong>efficiency, scalability, and raw performance</strong>.
+                </p>
+                <p>My journey is far from over. I’m constantly learning, improving, and building—one project at a time.</p>
+                
+                
+            </div>
+        </section>
+    </div>
 
-    <!-- Resume Section -->
-    <section id="resume" class="container text-center mt-5">
-        <h2>Resume</h2>
-        <p>Download my resume <a href="assets/resume.pdf" download>here</a>.</p>
-        <!-- Add resume details here -->
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="container text-center mt-5">
-        <h2>Contact Me</h2>
-        <p>Let's get in touch!</p>
-        <form>
-            <input type="text" placeholder="Your Name" class="form-control mb-2">
-            <input type="email" placeholder="Your Email" class="form-control mb-2">
-            <textarea placeholder="Your Message" class="form-control mb-2"></textarea>
-            <button type="submit" class="btn btn-primary">Send</button>
-        </form>
-    </section>
-
-    <!-- Bootstrap & JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
 </html>
