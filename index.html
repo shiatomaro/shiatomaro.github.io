@@ -14,53 +14,57 @@
         <h2 id="loading-line-2" class="hidden">How can I help today?</h2>
     </div>
 
-    <div id="main-content" class="hidden">
-        <div class="sidebar-design">
-            <div class="design-item" onclick="location.href='index.html'">
-                <img src="assets/images/1.png" alt="Icon 1" class="design-icon">
-                <span class="tooltip">Home</span>
-            </div>
-            <div class="design-item" onclick="location.href='project.html'">
-                <img src="assets/images/5.png" alt="Icon 2" class="design-icon">
-                <span class="tooltip">Projects</span>
-            </div>
-            <div class="design-item" onclick="location.href='Socials.html'">
-                <img src="assets/images/2.png" alt="Icon 3" class="design-icon">
-                <span class="tooltip">Socials</span>
-            </div>
-        </div>    
+   <!-- Sidebar Toggle Button (Only for Mobile) -->
+<button id="menu-toggle" class="menu-toggle">☰</button>
+
+<!-- Sidebar -->
+<div id="sidebar" class="sidebar-design">
+    <div class="design-item" onclick="location.href='index.html'">
+        <img src="assets/images/1.png" alt="Icon 1" class="design-icon">
+        <span class="tooltip">Home</span>
+    </div>
+    <div class="design-item" onclick="location.href='project.html'">
+        <img src="assets/images/5.png" alt="Icon 2" class="design-icon">
+        <span class="tooltip">Projects</span>
+    </div>
+</div>
+
+
         <section id="home" class="container">
             <div class="content-left">
                 <div class="logo-align">
                     <img src="assets/images/logo.png" alt="logo-portfolio" class="logo">
                 </div>
-               <h1 class="glitch">Shia Tomaro</h1>
-                <p class="username">Web & App Developer | Cybersecurity | Graphic Designer & Art Illustrator</p> 
+
+                <div class="social-container">
+                    <a href="https://twitter.com" target="_blank" class="social-icon">
+                        <img src="assets/images/X.png" alt="Twitter" class="social-img">
+                    </a>
+                    <a href="https://github.com" target="_blank" class="social-icon">
+                        <img src="assets/images/github-icon.png" alt="GitHub" class="social-img">
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" class="social-icon">
+                        <img src="assets/images/ln.jpg" alt="LinkedIn" class="social-img">
+                    </a>
+                </div>
             </div>
+
             <div class="content-right">
-                <h2>Turning Imagination into Reality</h2>
-                <p>
-                    From a young age, I’ve always had a knack for bringing my imagination to life. My journey began when I was just 
-                    <strong>13 or 14</strong>, sketching my first website with nothing but <strong>pen and paper</strong>—a simple idea that would later evolve into something much bigger.
-                </p>
-                <p>
-                    As I grew, my curiosity expanded beyond web development. I delved into <strong>multimedia arts</strong>, exploring <strong>photography, photo editing, and illustration</strong>, where I found another creative outlet. 
-                    By the time I reached senior high school, I pursued <strong>Mobile and Web Development (MAWD)</strong>, spending <strong>two years</strong> mastering the craft and deepening my technical skills.
-                </p>
-                <p>
-                    At <strong>18</strong>, I developed my <strong>first Java application</strong>, a milestone made possible when I finally got my first laptop. This opened up a new world of possibilities, pushing me to explore even further.
-                </p>
-                <p>
-                    In College, I chose to major in <strong>Cybersecurity</strong>, driven by a personal need to understand <strong>digital security</strong> due to past experiences. The more I learned, the more I realized how vital security is in the tech world.
-                </p>
-                <p>
-                    Now, my passion for development continues to grow. I’m actively expanding my expertise in different programming languages, with a particular focus on <strong>Go</strong>—a language that fascinates me with its 
-                    <strong>efficiency, scalability, and raw performance</strong>.
-                </p>
-                <p>My journey is far from over. I’m constantly learning, improving, and building—one project at a time.</p>
-                
-                
+                <h1 class="glitch">Shia Tomaro</h1> 
+                <div class="social-wrapper">
+                    <p class="username">
+                        Specializing in web development, cybersecurity, and backend systems—delivering efficient, secure, and scalable solutions.  
+                        Let's turn ideas into reality with optimized performance and cutting-edge development.  
+                    </p>
+                    <div class="contact-me">
+                    
+                            <a href="mailto:shiatomaro@gmail.com" class="contact-btn">Email</a>
+                            <a href="tel:09685588767" class="contact-btn">Call</a>
+                        </div>                        
+                    </p> 
+                </div>
             </div>
+            
         </section>
     </div>
     <div id="content"></div>
