@@ -15,22 +15,21 @@
 
     <div id="main-content" class="hidden">
         <!-- Sidebar Design Element -->
-        <div class="sidebar-design">
-            <img src="assets/images/logo.png" alt="My Portfolio Logo" class="design-logo">
-        
+        <div class="sidebar-design"> 
             <div class="design-item">
                 <img src="assets/images/1.png" alt="Design 1" class="design-icon">
                 <span class="tooltip">Home</span>
             </div>
-            <div class="design-item">
+            <div class="design-item" id="project"  onclick="location.href='project.html'">
                 <img src="assets/images/5.png" alt="Design 2" class="design-icon">
                 <span class="tooltip">Projects</span>
             </div>
-            <div class="design-item">
+            
+            <div class="design-item" onclick="location.href='Socials.html'">
                 <img src="assets/images/2.png" alt="Design 3" class="design-icon">
                 <span class="tooltip">Socials</span>
             </div>
-            <div class="design-item">
+            <div class="design-item" onclick="location.href='contact.html'">
                 <img src="assets/images/3.png" alt="Design 4" class="design-icon">
                 <span class="tooltip">Contact Me</span>
             </div>
@@ -41,6 +40,9 @@
         <section id="home" class="container">
             <!-- Scrollable Background Section -->
             <div class="content-left">
+                <div class="logo-align">
+                    <img src="assets/images/logo.png" alt="logo-portfolio" class="logo">
+                </div>
                <h1 class="glitch">Shia Tomaro</h1>
                 <p class="username">Web & App Developer | Cybersecurity | Graphic Designer & Art Illustrator</p> 
             </div>
@@ -72,7 +74,7 @@
             </div>
         </section>
     </div>
-
+    <div id="content"></div>
     <script src="assets/js/script.js"></script>
 </body>
 </html>

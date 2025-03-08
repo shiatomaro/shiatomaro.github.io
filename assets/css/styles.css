@@ -1,11 +1,10 @@
-/* General Styles */
 body {
     font-family: Arial, sans-serif;
     color: #17dfdb;
     background-color: #19171b;
+
 }
 
-/* Loading Screen */
 .loading-screen {
     position: fixed;
     top: 0;
@@ -37,7 +36,7 @@ body {
     transition: opacity 0.5s ease-in-out;
 }
 
-/* Sidebar Design */
+
 .sidebar-design {
     position: fixed;
     left: 20px;
@@ -46,9 +45,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px; /* Spacing between icons */
+    gap: 10px; 
 }
-/* Sidebar Design */
 .sidebar-design {
     position: fixed;
     left: 20px;
@@ -60,12 +58,11 @@ body {
     gap: 20px;
 }
 
-.design-logo {
-    width: 100px;  
+.logo {
+    width: 60%;
     height: auto;
-    margin-bottom: 10px;
-    transition: transform 0.3s ease-in-out;
 }
+
 .design-item {
     display: flex;
     flex-direction: column;
@@ -81,10 +78,9 @@ body {
 .design-icon:hover {
     transform: scale(1.2);
 }
-/* Tooltip Styling */
 .tooltip {
     position: absolute;
-    left: 60px; /* Adjust to position the text */
+    left: 60px;
     background: black;
     color: white;
     padding: 5px 10px;
@@ -95,8 +91,6 @@ body {
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
 }
-
-/* Show tooltip on hover */
 .design-item:hover .tooltip {
     visibility: visible;
     opacity: 1;
@@ -122,41 +116,29 @@ body {
         font-size: 12px;
     }
 }
-/* Main Content */
 .container {
     display: flex;
     justify-content: space-between;
     padding-left: 120px;
     min-height: 100vh;
     align-items: center;
+    height: 100vh; 
+    overflow: hidden; 
 }
 
-/* Background on Left */
+
 .content-left {
-    width: 50%;
-    min-height: 200px;
-    background-image: url('assets/images/background.jpg');
-    background-size: cover;
-    background-position: center;
-    color: #fff;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center horizontally */
+    text-align: center; /* Ensures text is centered */
 }
-
-
-
-/* Introduction on Right */
 .content-right {
     width: 50%;
     text-align: left;
     padding: 40px;
 }
 
-.img {
-    width: 150px;
-    height: auto;
-    border-radius: 50%;
-}
-
-/* Glitch Animation */
 @keyframes glitch {
     0% { text-shadow: 2px 2px 0 #c51f72, -2px -2px 0 #0000ff; }
     25% { text-shadow: -2px -2px 0 #c51f72, 2px 2px 0 #0000ff; }
@@ -179,11 +161,6 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-.username, .glitch {
-    text-align: center;
-}
-
-/* Responsive Design */
 @media (max-width: 992px) { 
     .design-icon {
         width: 40px; 
@@ -212,4 +189,83 @@ body {
     .content-right {
         padding: 20px;
     }
+}
+
+/* Projects Section */
+.projects-container {
+    text-align: center;
+    padding: 40px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.projects-container h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #17dfdb;
+}
+
+.projects-container p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #ccc;
+}
+
+/* Carousel Styling */
+.carousel {
+    max-width: 600px;
+    margin: auto;
+}
+
+.carousel-inner {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.carousel-item {
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.card {
+    background: #19171b;
+    border: none;
+    color: white;
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #17dfdb;
+}
+
+.card-text {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #ccc;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #17dfdb;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+/* Back Button */
+#back-button {
+    background-color: #17dfdb;
+    border: none;
+    color: black;
+    font-weight: bold;
 }
