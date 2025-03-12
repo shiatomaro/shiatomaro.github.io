@@ -15,4 +15,8 @@ document.addEventListener("DOMContentLoaded", function () {
     menuToggle.addEventListener("click", function () {
         sidebar.classList.toggle("sidebar-visible");
     });
+    const toggleMode = document.getElementById("mode-toggle");
+    toggleMode.addEventListener("click", function () {
+        document.body.classList.toggle("light-mode");
+    });
 });
