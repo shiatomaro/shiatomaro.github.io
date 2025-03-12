@@ -13,65 +13,113 @@
         gtag('config', 'G-LF7WWES11V');
     </script>
 </head>
-</head>
 <body>
-    <div id="loading-screen" class="loading-screen">
-        <h1 id="loading-line-1" class="hidden">Hey there, I'm Shia.</h1>
-        <h2 id="loading-line-2" class="hidden">How can I help today?</h2>
+    <div id="loading-screen">
+        <div class="loading-content">
+            <p id="loading-line-1">Hey there</p>
+            <p id="loading-line-2">How can I help you?</p>
+        </div>
+    </div>
+    
+    <div id="sidebar" class="sidebar-design">
+        <div class="design-item" onclick="location.href='#home'">
+            <img src="assets/images/1.png" alt="Home" class="design-icon">
+            <span class="tooltip">Home</span>
+        </div>
+        <div class="design-item" onclick="location.href='#projects'">
+            <img src="assets/images/5.png" alt="Projects" class="design-icon">
+            <span class="tooltip">Projects</span>
+        </div>
+        <div class="design-item" onclick="location.href='#projects'">
+            <img src="assets/images/5.png" alt="Projects" class="design-icon">
+            <span class="tooltip">About</span>
+        </div>
+        <div class="design-item" id="mode">
+            <button id="mode-toggle"></button>
+        </div>
     </div>
 
-<button id="menu-toggle" class="menu-toggle">☰</button>
-
-
-<div id="sidebar" class="sidebar-design">
-    <div class="design-item" onclick="location.href='index.html'">
-        <img src="assets/images/1.png" alt="Icon 1" class="design-icon">
-        <span class="tooltip">Home</span>
-    </div>
-    <div class="design-item" onclick="location.href='project.html'">
-        <img src="assets/images/5.png" alt="Icon 2" class="design-icon">
-        <span class="tooltip">Projects</span>
-    </div>
-</div>
-
-        <section id="home" class="container">
-            <div class="content-left">
-                <div class="logo-align">
-                    <img src="assets/images/logo.png" alt="logo-portfolio" class="logo">
-                </div>
-
-                <div class="social-container">
-                    <a href="https://twitter.com" target="_blank" class="social-icon">
-                        <img src="assets/images/X.png" alt="Twitter" class="social-img">
-                    </a>
-                    <a href="https://github.com" target="_blank" class="social-icon">
-                        <img src="assets/images/github-icon.png" alt="GitHub" class="social-img">
-                    </a>
-                    <a href="https://linkedin.com" target="_blank" class="social-icon">
-                        <img src="assets/images/ln.jpg" alt="LinkedIn" class="social-img">
-                    </a>
-                </div>
+    <section id="home" class="container">
+        <div class="content-left">
+            <div class="logo-align">
+                <img src="assets/images/logo.png" alt="logo-portfolio" class="logo">
             </div>
-
-            <div class="content-right">
-                <h1 class="glitch">Shia Tomaro</h1> 
-                <div class="social-wrapper">
-                    <p class="username">
-                        Specializing in web development, cybersecurity, and backend systems—delivering efficient, secure, and scalable solutions.  
-                        Let's turn ideas into reality with optimized performance and cutting-edge development.  
-                    </p>
-                    <div class="contact-me">
-                    
-                            <a href="mailto:shiatomaro@gmail.com" class="contact-btn">Email</a>
-                            <a href="tel:09685588767" class="contact-btn">Call</a>
-                        </div>                        
-                    </p> 
-                </div>
+        </div>
+        <div class="content-right">
+            <h1 class="glitch">Shia Tomaro</h1> 
+            <p >
+                Specializing in web development, cybersecurity, and backend systems—delivering efficient, secure, and scalable solutions. Let's turn ideas into reality with optimized performance and cutting-edge development.
+            </p>
+            <div class="contact-me">
+                <a href="mailto:shiatomaro@gmail.com" class="contact-btn">Email</a>
+                <a href="tel:09685588767" class="contact-btn">Call</a>
             </div>
-            
-        </section>
+        </div>
+    </section>
+
+<section id="projects" class="projects-container">
+    <h2  class="glitch">Projects</h2>
+    <div class="projects-wrapper">
+        <div class="project-card">
+            <img src="assets/images/flies-admin.PNG" alt="User Management Web App">
+            <div class="project-info">
+                <h3>FLIES Web App</h3>
+                <p>A full-stack user management app built with React and Go. <a href="https://github.com/shiatomaro/FLIES" target="_blank">(more)</a></p>
+            </div>
+        </div>
+        <div class="project-card">
+            <img src="assets/images/go-ask-away-sample.PNG" alt="AI Discord Bot">
+            <div class="project-info">
+                <h3>AI Discord Bot</h3>
+                <p>A Go-based AI-powered Discord bot using the Gemini API. <a href="https://github.com/shiatomaro/go-gemini-discord-bot" target="_blank">(more)</a></p>
+            </div>
+        </div>
+        <div class="project-card">
+            <img src="assets/images/go-web-scraper.PNG" alt="Go Web Scraper">
+            <div class="project-info">
+                <h3>Web Scraper</h3>
+                <p>A Go-based web scraper for product data extraction. <a href="https://github.com/shiatomaro/go-web-scraper-using-colly" target="_blank">(more)</a></p>
+            </div>
+        </div>
     </div>
-    <div id="content"></div>
+ 
+    <div class="projects-navigation">
+        <button id="prev-project">Previous</button>
+        <button id="next-project">Next</button>
+    </div>
+</section>
+
+
+    <!-- About Me Section -->
+    <section id="about" class="about-container">
+        <div class="about-left">
+            <img src="assets/images/profile.jpg" alt="Shia's Picture">
+        </div>
+        <div class="about-right">
+            <h2>About Me</h2>
+            <p>
+                I'm a passionate Web Developer, Cybersecurity enthusiast, and Backend Systems expert. My journey into tech started at 15, sketching website ideas with just a pen and paper. By 18, I had built my first application in Java, and from that moment, I was hooked on coding. I pursued a degree in Information Technology, specializing in Cybersecurity, where I delved deep into ethical hacking, network security, and secure coding.
+                
+                Right now, I'm preparing for my CEH certification, sharpening my skills to outthink cyber threats before they even arise. Along the way, I’ve built everything from AI-powered Discord bots to Go-based web scrapers and full-stack applications. I thrive on problem-solving, love optimizing backend systems, and enjoy turning complex challenges into elegant, efficient solutions.
+                
+                For me, technology isn't just a career--it's an endless adventure of learning, building, and securing the digital world."</p>
+        </div>
+    </section>
+    <footer id="footer">
+        <div class="social-container">
+            <a href="https://twitter.com" target="_blank" class="social-icon">
+                <img src="assets/images/X.png" alt="Twitter" class="social-img">
+            </a>
+            <a href="https://github.com" target="_blank" class="social-icon">
+                <img src="assets/images/github-icon.png" alt="GitHub" class="social-img">
+            </a>
+            <a href="https://linkedin.com" target="_blank" class="social-icon">
+                <img src="assets/images/ln.jpg" alt="LinkedIn" class="social-img">
+            </a>
+        </div>
+        <p>© 2025 Shia Tomaro. All Rights Reserved.</p>
+    </footer>
+
     <script src="assets/js/script.js"></script>
 </body>
 </html>
