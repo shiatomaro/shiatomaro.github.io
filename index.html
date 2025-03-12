@@ -5,8 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shia's Portfolio</title>
     <link rel="stylesheet" href="assets/css/styles.css">
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LF7WWES11V"></script>
-    <script src="assets/js/analytics.js"></script>
+    <<script async src="https://www.googletagmanager.com/gtag/js?id=G-LF7WWES11V"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-LF7WWES11V');
+    </script>
+</head>
 </head>
 <body>
     <div id="loading-screen" class="loading-screen">
@@ -14,10 +20,9 @@
         <h2 id="loading-line-2" class="hidden">How can I help today?</h2>
     </div>
 
-   <!-- Sidebar Toggle Button (Only for Mobile) -->
 <button id="menu-toggle" class="menu-toggle">☰</button>
 
-<!-- Sidebar -->
+
 <div id="sidebar" class="sidebar-design">
     <div class="design-item" onclick="location.href='index.html'">
         <img src="assets/images/1.png" alt="Icon 1" class="design-icon">
